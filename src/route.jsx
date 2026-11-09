@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import App from "./Componets/App";
 import Home from "./Componets/Home";
@@ -7,7 +7,7 @@ import Toprated from "./Componets/Toprated";
 import Searchmovie from "./Componets/Searchmovie";
 import Singlemovie from "./Componets/Singlemovie";
 const PROJECTROUTE = (
-  <BrowserRouter>
+ <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="" element={<Home />} />
@@ -17,7 +17,7 @@ const PROJECTROUTE = (
         <Route path="singlemovie/:id" element={<Singlemovie />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+</HashRouter>
 );
 export default PROJECTROUTE;
 
